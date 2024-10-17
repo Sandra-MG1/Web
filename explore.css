@@ -1,0 +1,40 @@
+body{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  @keyframes glitchAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%; 
+    }
+}
+
+.striped-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(40deg, #222, #777);
+    background-size: 200% 150%; 
+    animation: glitchAnimation 1s infinite linear; 
+    z-index: -1;
+}
+
+.footer-section a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.footer-section a:hover {
+    text-decoration: underline; 
+    color: white; 
+}
+

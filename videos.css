@@ -1,0 +1,66 @@
+body {
+    font-family: "Rowdies", sans-serif;
+}
+
+.bg-dark {
+    background-color: #343a40;
+}
+
+.text-white {
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.video-fluid {
+    width: 100%;
+    height: 200px;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.glitch-background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(40deg, #222, #444);
+    background-size: 200% 150%; 
+    animation: glitchAnimation 1s infinite linear; 
+    z-index: -1;
+}
+
+@keyframes glitchAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%; 
+    }
+}
